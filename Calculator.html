@@ -1,0 +1,89 @@
+
+<html>
+    <head>
+        <title>Calculator</title>
+    </head>
+    <body>
+     <div class="container">
+         <div class="row1" style="padding: 30px; background-color: azure; text-align: center; color: brown; font-size: 26px;">
+             <u>WELCOME TO CALCULATOR WORLD!</u>
+         </div>
+         <div class="row2" style="background-color: beige; height: 100%; text-align: center;">
+             <br>
+            <form name="calculator">
+               <table style="display: inline-block; padding: 24px; margin: auto; border: 2px solid yellow; border-radius: 2px;">
+                   <tr>
+                       <td colspan="4">
+                        <input type="text" style="font-size: 30px;" name="display"  disabled><br>
+                       </td> 
+                   </tr>
+
+                   <tr>
+                       <td>
+                           <input type="button" style="font-size: 30px; display: block; width: 100%;" name="one" value="1" onclick="calculator.display.value += '1'">
+                       </td>
+                       <td>
+                           <input type="button" style="font-size: 30px; display: block; width: 100%;" name="two"  value="2" onclick="calculator.display.value += '2'">
+                       </td>
+                       <td>
+                           <input type="button" style="font-size: 30px; display: block; width: 100%;" name="three" value="3" onclick="calculator.display.value += '3'">
+                       </td>
+                       <td>
+                           <input type="button" style="font-size: 30px; display: block; width: 100%;" class="operator" name="plus" value="+" onclick="calculator.display.value += '+'">
+                       </td>
+                   </tr>
+                   <tr>
+                       <td>
+                           <input type="button" style="font-size: 30px; display: block; width: 100%;" name="four" value="4" onclick="calculator.display.value += '4'">
+                       </td>
+                       <td>
+                           <input type="button" style="font-size: 30px; display: block; width: 100%; " name="five" value="5" onclick="calculator.display.value += '5'">
+                       </td>
+                       <td>
+                           <input type="button" style="font-size: 30px; display: block; width: 100%;" name="six" value="6" onclick="calculator.display.value += '6'">
+                       </td>
+                       <td>
+                           <input type="button" style="font-size: 30px; display: block; width: 100%;" class="operator" name="minus" value="-" onclick="calculator.display.value += '-'">
+                       </td>
+                   </tr>
+                   <tr>
+                       <td>
+                           <input type="button" style="font-size: 30px; display: block; width: 100%;" name="seven" value="7" onclick="calculator.display.value += '7'">
+                       </td>
+                       <td>
+                           <input type="button" style="font-size: 30px; display: block; width: 100%;" name="eight" value="8" onclick="calculator.display.value += '8'">
+                       </td>
+                       <td>
+                           <input type="button" style="font-size: 30px; display: block; width: 100%;" name="nine" value="9" onclick="calculator.display.value += '9'">
+                       </td>
+                       <td>
+                           <input type="button" style="font-size: 30px; display: block; width: 100%;" class="operator" name="numtiply" value="x" onclick="calculator.display.value += '*'">
+                       </td>
+                   </tr>
+                       <tr>
+                       <td>
+                           <input type="button" style="font-size: 30px; display: block; width: 100%;" id="clear" name="clear" value="C" onclick="calculator.display.value = ''">
+                       </td>
+                       <td>
+                           <input type="button" style="font-size: 30px; display: block; width: 100%;" name="zero" value="0" onclick="calculator.display.value += '0'">
+                       </td>
+                       <td>
+                           <input type="button" style="font-size: 30px; display: block; width: 100%;" name="doit" value="=" onclick="calculator.display.value = eval(calculator.display.value)">
+                       </td>
+                       <td>
+                           <input type="button" style="font-size: 30px; display: block; width: 100%;" class="operator" name="divide" value="/" onclick="calculator.display.value += '/'">
+                       </td>
+                   </tr>
+                
+                
+                </table>
+             
+             
+             
+             </form>
+               
+             
+         </div>
+        </div>
+    </body>
+</html>
